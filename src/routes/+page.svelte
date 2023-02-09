@@ -53,7 +53,7 @@
 	}
 
 	.date {
-		font-weight: 200;
+		font-weight: 300;
 	}
 
 	@media screen and (max-width: 640px) {
@@ -80,7 +80,7 @@
 		top: 0.5px;
 		left: 100%;
 		display: flex;
-		font-weight: 200;
+		font-weight: 300;
 		white-space: nowrap;
 	}
 
