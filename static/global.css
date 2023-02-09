@@ -40,13 +40,14 @@
 */
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3a95ac");
+@import url('//hello.myfonts.net/count/3a95ac');
 
 /* Bold */
 @font-face {
     font-family: 'Recoleta';
-    src: url('webfonts/3A95AC_2_0.eot');
-    src: url('webfonts/3A95AC_2_0.woff2') format('woff2'), url('webfonts/3A95AC_2_0.woff') format('woff'), url('webfonts/3A95AC_2_0.ttf') format('truetype');
+    src: url('./fonts/recoleta/3A95AC_2_0.eot');
+    src: url('./fonts/recoleta/3A95AC_2_0.woff2') format('woff2'),
+    url('./fonts/recoleta/3A95AC_2_0.woff') format('woff'), url('./fonts/recoleta/3A95AC_2_0.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 700;
@@ -55,8 +56,9 @@
 /* Medium */
 @font-face {
     font-family: 'Recoleta';
-    src: url('webfonts/3A95AC_3_0.eot');
-    src: url('webfonts/3A95AC_3_0.woff2') format('woff2'), url('webfonts/3A95AC_3_0.woff') format('woff'), url('webfonts/3A95AC_3_0.ttf') format('truetype');
+    src: url('./fonts/recoleta/3A95AC_3_0.eot');
+    src: url('./fonts/recoleta/3A95AC_3_0.woff2') format('woff2'),
+    url('./fonts/recoleta/3A95AC_3_0.woff') format('woff'), url('./fonts/recoleta/3A95AC_3_0.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 500;
@@ -65,19 +67,20 @@
 /* Thin  */
 @font-face {
     font-family: 'Recoleta';
-    src: url('webfonts/3A95AC_4_0.eot');
-    src: url('webfonts/3A95AC_4_0.woff2') format('woff2'), url('webfonts/3A95AC_4_0.woff') format('woff'), url('webfonts/3A95AC_4_0.ttf') format('truetype');
+    src: url('./fonts/recoleta/3A95AC_4_0.eot');
+    src: url('./fonts/recoleta/3A95AC_4_0.woff2') format('woff2'),
+    url('./fonts/recoleta/3A95AC_4_0.woff') format('woff'), url('./fonts/recoleta/3A95AC_4_0.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 200;
 }
 
-
 /* Light */
 @font-face {
     font-family: 'Recoleta';
-    src: url('webfonts/3A95AC_5_0.eot');
-    src: url('webfonts/3A95AC_5_0.woff2') format('woff2'), url('webfonts/3A95AC_5_0.woff') format('woff'), url('webfonts/3A95AC_5_0.ttf') format('truetype');
+    src: url('./fonts/recoleta/3A95AC_5_0.eot');
+    src: url('./fonts/recoleta/3A95AC_5_0.woff2') format('woff2'),
+    url('./fonts/recoleta/3A95AC_5_0.woff') format('woff'), url('./fonts/recoleta/3A95AC_5_0.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 300;
@@ -86,8 +89,9 @@
 /* Regular */
 @font-face {
     font-family: 'Recoleta';
-    src: url('webfonts/3A95AC_6_0.eot');
-    src: url('webfonts/3A95AC_6_0.woff2') format('woff2'), url('webfonts/3A95AC_6_0.woff') format('woff'), url('webfonts/3A95AC_6_0.ttf') format('truetype');
+    src: url('./fonts/recoleta/3A95AC_6_0.eot');
+    src: url('./fonts/recoleta/3A95AC_6_0.woff2') format('woff2'),
+    url('./fonts/recoleta/3A95AC_6_0.woff') format('woff'), url('./fonts/recoleta/3A95AC_6_0.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 400;
@@ -96,26 +100,89 @@
 /* SemiBold */
 @font-face {
     font-family: 'Recoleta';
-    src: url('webfonts/3A95AC_7_0.eot');
-    src: url('webfonts/3A95AC_7_0.woff2') format('woff2'), url('webfonts/3A95AC_7_0.woff') format('woff'), url('webfonts/3A95AC_7_0.ttf') format('truetype');
+    src: url('./fonts/recoleta/3A95AC_7_0.eot');
+    src: url('./fonts/recoleta/3A95AC_7_0.woff2') format('woff2'),
+    url('./fonts/recoleta/3A95AC_7_0.woff') format('woff'), url('./fonts/recoleta/3A95AC_7_0.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 600;
 }
 
-html, body {
+@font-face {
+    font-family: 'Graphik Web';
+    src: url('./fonts/graphik/Graphik-MediumItalic-Web.woff2') format('woff2'),
+    url('./fonts/graphik/Graphik-MediumItalic-Web.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    src: url('./fonts/graphik/Graphik-Medium-Web.woff2') format('woff2'),
+    url('./fonts/graphik/Graphik-Medium-Web.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    src: url('./fonts/graphik/Graphik-RegularItalic-Web.woff2') format('woff2'),
+    url('./fonts/graphik/Graphik-RegularItalic-Web.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    src: url('./fonts/graphik/Graphik-Regular-Web.woff2') format('woff2'),
+    url('./fonts/graphik/Graphik-Regular-Web.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+html,
+body {
     height: 100vh;
     width: 100vw;
-    margin: 0
+    margin: 0;
 }
 
 html {
     box-sizing: border-box;
-    font-family: 'Recoleta', serif;
+    --font-size-min: 14;
+    --font-size-max: 18;
+    --viewport-min: 400;
+    --viewport-max: 1400;
+    line-height: 1.6;
+    /* Explanation for this madness: https://css-tricks.com/snippets/css/fluid-typography/ */
+    font-size: calc(
+            (var(--font-size-min) * 1px) + (var(--font-size-max) - var(--font-size-min)) *
+            ((100vw - (var(--viewport-min) * 1px)) /
+            (var(--viewport-max) - var(--viewport-min)))
+    );
+}
+
+body {
+    font-family: "Graphik Web", Arial, sans-serif;
+    color: #fff;
+
 }
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
