@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <link rel="icon" href="%sveltekit.assets%/favicon.png"/>
-    <link rel="stylesheet" href="%sveltekit.assets%/global.css">
-    <meta name="viewport" content="width=device-width"/>
-    <title>Synk</title>
-    %sveltekit.head%
+  <meta charset="utf-8" />
+  <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+  <link rel="stylesheet" href="%sveltekit.assets%/global.css">
+  <meta name="viewport" content="width=device-width" />
+  <title>Synk</title>
+  %sveltekit.head%
 </head>
-<body data-sveltekit-preload-data="hover">
+
+<body data-sveltekit-preload-data="hover" style="--bg-color: #000; background-color: var(--bg-color)">
 <div style="display: contents">%sveltekit.body%</div>
+
+<script>
+  const palette = [
+    "#837647",
+    "#B94338",
+    "#863E5F",
+    "#BB46A0",
+    "#161354",
+    "#A26931",
+    "#757B2A",
+    "#623A32",
+    "#0C3283",
+    "#9556A3",
+    "#2F327B",
+    "#602C12",
+    "#537AA6",
+    "#53606E",
+    "#37779C",
+    "#AC5525",
+    "#3D4F20",
+    "#931C33",
+    "#956E46",
+    "#BD5524",
+    "#797575",
+    "#6F7692",
+    "#3D2930",
+    "#43777F",
+    "#2059B9",
+    "#B82B4A",
+    "#394047",
+    "#438550",
+    "#916D65",
+    "#617F4B"
+  ];
+
+  const bgColor = palette[Math.floor(Math.random() * palette.length)];
+
+  const body = document.querySelector("body");
+  body.style.setProperty("--bg-color", bgColor);
+</script>
 </body>
 </html>

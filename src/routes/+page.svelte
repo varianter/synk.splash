@@ -17,40 +17,6 @@
 		'Variant'
 	];
 
-	const palette = [
-		'#837647',
-		'#B94338',
-		'#863E5F',
-		'#BB46A0',
-		'#161354',
-		'#A26931',
-		'#757B2A',
-		'#623A32',
-		'#0C3283',
-		'#9556A3',
-		'#2F327B',
-		'#602C12',
-		'#537AA6',
-		'#53606E',
-		'#37779C',
-		'#AC5525',
-		'#3D4F20',
-		'#931C33',
-		'#956E46',
-		'#BD5524',
-		'#797575',
-		'#6F7692',
-		'#3D2930',
-		'#43777F',
-		'#2059B9',
-		'#B82B4A',
-		'#394047',
-		'#438550',
-		'#916D65',
-		'#617F4B'
-	];
-
-	const bgColor: string = palette[Math.floor(Math.random() * palette.length)];
 	const date = Intl.DateTimeFormat('nb-NO', {
 		weekday: 'long',
 		day: 'numeric',
@@ -58,18 +24,12 @@
 	}).format(new Date());
 </script>
 
-<main style="--bg-color: {bgColor}">
+<main>
 	<header class="header">
 		<div class="logo">
 			<h1 class="synk">Synk.</h1>
 
-			<Typewriter
-				mode="loopRandom"
-				keepCursorOnFinish
-				interval={200}
-				unwriteInterval={100}
-				wordInterval={2750}
-			>
+			<Typewriter mode="loopRandom" interval={200} unwriteInterval={100} wordInterval={2750}>
 				{#each words as word}
 					<h1 class="typewriter">{word}</h1>
 				{/each}
@@ -87,6 +47,7 @@
 		font-family: 'Recoleta', serif;
 		font-weight: 500;
 	}
+
 	h1:after {
 		margin-left: 2px;
 	}
@@ -108,9 +69,11 @@
 		width: 100%;
 		padding: 2rem;
 	}
+
 	.logo {
 		position: relative;
 	}
+
 	.typewriter {
 		position: absolute;
 		/* Shift text to fix alignment with thinner font. */
