@@ -2,10 +2,9 @@
 	import Typewriter from 'svelte-typewriter';
 
 	const words = [
-		'group',
 		'gutta',
 		'gjengen',
-		'fæmmen',
+		'familien',
 		'klassen',
 		'kollektivet',
 		'teamet',
@@ -14,7 +13,13 @@
 		'korpset',
 		'bandet',
 		'gruppa',
-		'Variant'
+		'Variant',
+		'syklubben',
+		'kollokviegruppa',
+		'alle',
+		'søskenflokken',
+		'nabolaget',
+		'mc-klubben'
 	];
 
 	const date = Intl.DateTimeFormat('nb-NO', {
